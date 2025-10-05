@@ -1,0 +1,27 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 80vh;
+    font-family: sans-serif;
+    background-color: lightgrey;
+}
+
+body > * {
+    width: fit-content;
+}
+
+form#selection {
+    display: flex;
+    font-size: larger;
+    font-weight: bold;
+    background-color: grey;
+    flex-direction: column;
+    gap:10px;
+    border: black solid 1px;
+    padding: 1em;
+}
+
+form#selection > * {
+    width: fit-content;
+}
