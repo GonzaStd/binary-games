@@ -1,0 +1,91 @@
+body {
+    margin: 2em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 80vh;
+    font-family: sans-serif;
+    background-color: lightgrey;
+}
+
+body > * {
+    width: fit-content;
+}
+
+div.gameConfig {
+    display: flex;
+    width: 80vw;
+    background-color: grey;
+    flex-direction: column;
+    gap:10px;
+    border: black solid 1px;
+    padding: 1em;
+}
+
+div.gameConfig > * {
+    width: fit-content;
+}
+
+section.exercise {
+    display: flex;
+    flex-direction: row;
+    margin-left: 25vw;
+}
+
+table {
+    margin-top: 2em;
+    padding: 10px;
+}
+
+
+table.exercise tbody, thead {
+    display: block;
+    width: fit-content;
+    height: fit-content;
+}
+
+table > * > tr {
+    display: flex;
+    flex-direction: row;
+    height: 27px;
+}
+tr p {
+    margin: 0;
+}
+table.exercise > tbody > tr > td {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+table.check {
+    width: 25vw;
+}
+
+
+table.exercise {
+    background-color: #A6B5C7;
+    border: black solid 1px;
+    height: fit-content;
+}
+
+
+
+table.exercise td, th {
+    width: 5em;
+}
+
+table.exercise td > input {
+    width: 4.8em;
+}
+
+span.answer {
+    font-weight: bold;
+}
+
+div.actions {
+    padding-top: 1em;
+    gap: 1em;
+    display: flex;
+}
+

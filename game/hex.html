@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+  <link rel="stylesheet" href="games.css">
+    <title>Hex</title>
+</head>
+<body>
+<div class="gameConfig">
+  <label for="hex-exercise">Exercise</label>
+  <select name="exercise" id="hex-exercise">
+    <option value="hex-dec">Hex to Decimal</option>
+    <option value="dec-hex">Decimal to Hex</option>
+  </select>
+
+  <label for="hex-difficulty">Difficulty</label>
+  <select name="difficulty" id="hex-difficulty">
+    <option value="easy">Easy</option>
+    <option value="medium">Medium</option>
+    <option value="hard">Hard</option>
+  </select>
+</div>
+<section class="exercise">
+<table class="exercise">
+</table>
+<table class="check">
+  <thead>
+  <tr>
+    <th>Corrections</th>
+  </tr>
+  </thead>
+  <tbody>
+  </tbody>
+</table>
+</section>
+<div class="actions">
+  <button onclick="update()">Update</button>
+  <button onclick="check()">Check</button>
+</div>
+</body>
+<script src="./scripts/gMain.js"></script>
+</html>
