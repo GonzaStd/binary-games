@@ -1,3 +1,9 @@
+function listenInputs(){
+    document.querySelectorAll("td > input")
+        .forEach((input) => {
+        input.addEventListener("change", saveInput);
+    })
+}
 
 document.addEventListener("DOMContentLoaded", () => {
     let selectConfig = document.querySelectorAll("div.gameConfig select");
@@ -6,10 +12,7 @@ document.addEventListener("DOMContentLoaded", () => {
         s.addEventListener("change", genExercise);
     });
     loadInput();
-    let inputs = document.querySelectorAll("td > input");
-    inputs.forEach((input) => {
-        input.addEventListener("change", saveInput);
-    })
+    listenInputs();
     // event listener passes the "event" parameter to "exercise" function
 })
 
@@ -89,6 +92,7 @@ function genExercise(){
     table.append(tHead, tBody);
     let inputs = document.querySelectorAll("td > input");
     inputs.forEach((input) => {input.disabled = false});
+    listenInputs();
 
 }
 
@@ -103,7 +107,6 @@ function update(){
 }
 
 function saveInput() {
-    console.log("saveInput");
     let inputs = document.querySelectorAll("td > input");
     let inputValuesArr = [];
     for (let i=0; i<inputs.length; i++){
